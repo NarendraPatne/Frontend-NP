@@ -671,6 +671,9 @@ background: linear-gradient(194deg, rgba(50, 168, 51, 1) 16%, rgba(172, 224, 34,
     position: relative;
     line-height: 1.5;
 }
+body{
+    overflow-x: hidden;
+}
 #lcomma{
     position: absolute;
     top: -60%;
