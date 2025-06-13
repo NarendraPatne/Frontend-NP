@@ -11,9 +11,11 @@ hfall.forEach(function(elem){
     elem.addEventListener("mouseenter",(dets)=>{
         cursor.style.scale=3;
         cursor.style.border=".5px solid #fff";
-        cursor.style.backgroundColor="transparent"
+        cursor.style.backgroundColor="transparent";
+        elem.style.color="#000";
     })
     elem.addEventListener("mouseleave",(dets)=>{
+        elem.style.color="#FFF";
         cursor.style.scale=1;
         cursor.style.border="0px solid #fff";
         cursor.style.backgroundColor="#95C11E"
@@ -99,5 +101,16 @@ gsap.from("#page4 h1",{
         start:"top 65%",
         end:"top 60%",
         scrub:3
+    }
+})
+let menub=document.querySelector("#men");
+let menu=document.querySelector("#menud")
+menub.addEventListener("click",function(e){
+   if (menu.style.opacity === "1") {
+        menu.style.opacity = "0";
+        menu.style.pointerEvents = "none";
+    } else {
+        menu.style.opacity = "1";
+        menu.style.pointerEvents = "auto";
     }
 })
