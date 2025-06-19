@@ -225,12 +225,14 @@ body{
 #footer{
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     background-color: black;
     color: white;
     padding: 20px 30px;
     /* font-family: "General Sans Medium"; */
     font-weight: 700;
+    margin: 20px;
 }
 #footerleft,#footeright{
     display: flex;
