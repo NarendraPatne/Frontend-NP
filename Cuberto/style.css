@@ -185,12 +185,12 @@ html,body{
 #slides{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 3vw 10vw;
     flex-direction: row;
 }
 .slide{
     width: 30%;
-
 }
 .slide .img{
     width: 100%;
@@ -214,7 +214,6 @@ html,body{
 .slide h3{
     font-size: 1.3vw;
     font-weight: 300;
-
 }
 #newd{
     width: 100%;
@@ -245,4 +244,154 @@ html,body{
 .card p{
     font-size: 1vw;
     font-weight: 400;
+}
+#tq{
+    padding: 10vh;
+    text-align: center;
+    font-size: 6vw;
+}
+/* --------------------------------------------------Media Queries */
+@media (max-width:500px) {
+    .hid{
+        display: none;
+    }
+    #nav i{
+        font-size: 3vh;
+    }
+    #home #homemain{
+        width:100%;
+        padding: 8vh 5vh;
+    }
+    #homemain>h1{
+        width: 70%;
+    }
+    .headings{
+        flex-direction: column;
+        gap:20px;
+        padding: 40px 0;
+    }
+    #homemain .headings h1{
+        font-size: 9vh;
+        width: 60%;
+    }
+    #homelast{
+        padding: 1vh 5vh;
+    }
+    #homelast p{
+        font-size: 2vh;
+        width: 100%;
+        font-weight: 100;
+        text-align: justify;
+    }
+    #featured{
+        padding: 0;
+        position: relative;
+    }
+    #featured .fheading h1{
+        font-size: 6vh;
+        font-weight: 400;
+    }
+    .fheading{
+        position: absolute;
+        top:2%;
+        right: 10%;
+    }
+    #fimages{
+        position: relative;
+        width: 100%;
+    }
+    #fleft{
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        top:0%;
+        left:10%;
+    }
+    .fleftelem h1{
+        font-size: 4vh;
+        font-weight: 800;
+        line-height: 1;
+        margin: 1.5vw 0;
+        text-transform: capitalize;
+    }
+    .fleftelem h3{
+        margin-top: 150%;
+        font-size: 2.5vh;
+        font-weight: 100;
+    }
+    .fleftelem h4{
+        opacity: .5;
+        font-weight: 400;
+    }
+    #fright{
+        width: 100%;
+        justify-content: center;
+    }
+    #fright .images{
+        width: 90%;
+        height: 90%;
+    }
+    .btndiv button{
+         padding: 3vh 6vh;
+         font-size: 2vh;
+         font-weight: 500;
+         margin: 30px 0;
+    }
+    #dev{
+        padding: 5vw 10vw;
+    }
+    #dev h1{
+        font-size: 4vh;
+    }
+    #dev p{
+        font-size: 2vh;
+        width: 100%;
+    }
+    #slides{
+        margin-top: 50px;
+        /* border: 1px solid black; */
+        flex-direction: column;
+        /* margin:5px; */
+    }
+    .slide{
+        width: 95%;
+    }
+    .slide .tag{
+        padding: 20px 40px;
+    }
+    .slide h3{
+    font-size: 2vh;
+    font-weight: 300;
+    }
+    #newd{
+        width: 100%;
+        height: fit-content;
+    }
+    #newd h1{
+    font-size: 4vh;
+    width: 70%;
+    font-weight: 300;
+    padding: 5vw 0;
+    }
+    #cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+    }
+    .card h3{
+    margin: 8px 0;
+    font-size: 2vh;
+}
+.card p{
+        margin: 14px 0;
+        font-size: 1.5vh;
+        font-weight: 100;
+        text-align: justify;
+    }
+#tq{
+    padding: 8vh;
+    text-align: center;
+}
 }
