@@ -66,21 +66,21 @@ elems.forEach(function (elem) {
   });
 });
 
-let pTags = document.querySelectorAll("#paracon p");
+let ptags = document.querySelectorAll("#paracon p");
 let currentIndex = 0;
 let panimating = false;
 
 document.querySelector("#main").addEventListener("click", function () {
   if (panimating) return;
   panimating = true;
-  gsap.to(pTags[currentIndex], {
+  gsap.to(ptags[currentIndex], {
     top: "-100%",
     duration: 0.5,
     ease: "easeInOut",
     onComplete: () => {
-      gsap.set(pTags[currentIndex], { top: "100%" });
-      currentIndex = (currentIndex + 1) % pTags.length;
-      gsap.to(pTags[currentIndex], {
+      gsap.set(ptags[currentIndex], { top: "100%" });
+      currentIndex = (currentIndex + 1) % ptags.length;
+      gsap.to(ptags[currentIndex], {
         top: "0%",
         duration: 0.5,
         ease: "Expo.easeInOut",
